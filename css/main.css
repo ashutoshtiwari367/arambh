@@ -154,3 +154,46 @@
 .header-content{
     font-size: x-large;
 }
+.why-perfrct{
+    border-bottom: 3px solid black;
+    text-align: center;
+    width: 25%;
+    margin: auto;
+    margin-top: 5%;
+}
+.why-div{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 85%; 
+    font-size: 20px;
+    padding: 5%;
+    background-color: aliceblue;
+    box-shadow: 0 0 12px  black;
+}
+.why-content{
+    width: 85%; text-align: center;
+    margin: auto; 
+    margin-bottom: 2%;
+    font-size: large;
+
+
+}
+
+.why-perfrct1{
+    border-bottom: 3px solid white;
+    text-align: center;
+    width: 25%;
+    margin: auto;
+    margin-top: 5%;padding-top: 2%;
+
+}
+@media screen and (max-width: 450px){
+
+    .why-perfrct{
+        width: 75%;
+    }
+    .why-perfrct1{
+        width: 75%;
+    }
+}
