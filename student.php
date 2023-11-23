@@ -29,7 +29,7 @@ $mail->Port= 465;
 // $mail->SMTPSecure = 'ssl';
 // $mail->Port= 465;
 // 
-$mail->setFrom('info@aarambhtutorials.com', 'deepak');
+$mail->setFrom('info@aarambhtutorials.com', 'ARAMBH');
 
 
 $mail->addAddress($email);
@@ -42,7 +42,8 @@ $mail->Subject = 'Qoute from Arambh';
 $mail->Body =  '
 <table>
 <tr style="">
-<td>'.$parent_name.' asshhytjgktjtjrdjrtjf rdrjt</td>
+<td>'.$parent_name.' Thank you for fill the form .
+We will call you as soon as possible.</td>
 </tr>
 </table>
 
