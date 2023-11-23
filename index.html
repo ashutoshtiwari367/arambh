@@ -34,9 +34,9 @@
                 <p style=" font-size: large;">info@aarambhtutorials.com</p>
             </div>
 
-
+</div>
         </div>
-        <nav class="navbar navbar-expand-lg   border-top border-5 border-dark navbar-light sticky-top p-0"
+        <nav class="navbar navbar-expand-lg   border-top border-5 border-dark navbar-light sticky-top p-0 top-0"
             style="background-color: black; color: white;">
             <a class="  d-flex align-items-center " href="#">
                 <img src="./images/logo_arambh.webp" class=" p-0 main-logo1" alt="">
@@ -48,7 +48,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="aarambhtutorials.com" class="nav-item nav-link active">
+                    <a href="https://aarambhtutorials.com/" class="nav-item nav-link active">
                         <h5>Home</h5>
                     </a>
                     <a href="hire-home-tutor.html" class="nav-item nav-link">
@@ -58,7 +58,7 @@
                         <h5>Jobs</h5>
                     </a> -->
 
-                    <a href="" class="nav-item nav-link">
+                    <a href="register-as-home-tutor.html" class="nav-item nav-link">
                         <h5>Register as tutor</h5>
                     </a>
 
@@ -430,7 +430,9 @@
 
         <!-- FaQ end -->
 
-
+        <div class="sitebutton sitebutton-call" id="sitebutton">
+            <a href="tel:+1 (833) 233-4447"><button style="font-size: larger;"> +1 (833) 233-4447</button></a>
+        </div>
         <!-- Footer Start -->
 
 
@@ -514,6 +516,25 @@
                     })
 
                 })
+
+
+
+                window.addEventListener('scroll', function () {
+            a = window.pageYOffset
+            if (a >= 500) {
+                ac = document.querySelectorAll('#sitebutton')
+                for (i = 0; i < ac.length; i++) {
+                    ac[i].style.display = 'block'
+                }
+                // document.getElementById('sitebutton').style.display = 'block'
+            } else {
+                // document.getElementById('sitebutton').style.display = 'none'
+                ac = document.querySelectorAll('#sitebutton')
+                for (i = 0; i < ac.length; i++) {
+                    ac[i].style.display = 'none'
+                }
+            }
+        });
             </script>
 
 </body>

@@ -15,53 +15,52 @@
 <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="row">
-        <div class="col-sm-6 col-mg-6 col-lg-6 text-center">
-        <div class="d-flex mt-1">
-            <span><iconify-icon icon="logos:whatsapp-icon"
-                    style="font-size: 30px; align-items: center; margin: auto;"></iconify-icon></span>
-            <p style=" font-size: larger; margin-left: 1%;">7310169209 , 6389176634
-            </p>
+    <div class="row" style="background-color: black;">
+        <div class="col-sm-12 col-mg-6 col-lg-6 text-center ">
+            <div class="d-flex mt-1 text-white">
+                <span><iconify-icon icon="logos:whatsapp-icon"
+                        style="font-size: 30px; align-items: center;"></iconify-icon></span>
+                <p style=" font-size: larger; margin-left: 1%;">7310169209 , 6389176634
+                </p>
+            </div>
         </div>
+        <div class="col-sm-12 col-mg-6 col-lg-6 text-center">
+            <div class="d-flex mt-1 text-md-end text-white">
+                <span><iconify-icon icon="noto-v1:e-mail"
+                        style="font-size: 30px; align-items: center; margin-top: 3%;"></iconify-icon></span>
+                <p style=" font-size: large;">info@aarambhtutorials.com</p>
+            </div>
+
 </div>
-<div class="col-sm-6 col-mg-6 col-lg-6 text-center" >
-    <div class="d-flex mt-1 text-md-end">
-        <span><iconify-icon icon="logos:whatsapp-icon"
-                style="font-size: 30px; align-items: center; margin: auto;"></iconify-icon></span>
-        <p style="margin-top: .3rem; font-size: larger;">7310169209</p>
-    </div>
-<div class="col-sm-6 col-mg-6 col-lg-6">
-    </div>
+        </div>
+        <nav class="navbar navbar-expand-lg   border-top border-5 border-dark navbar-light sticky-top p-0 top-0"
+            style="background-color: black; color: white;">
+            <a class="  d-flex align-items-center " href="#">
+                <img src="./images/logo_arambh.webp" class=" p-0 main-logo1" alt="">
 
-    </div>
-    <nav class="navbar navbar-expand-lg   border-top border-5 border-dark navbar-light sticky-top p-0"
-        style="background-color: black; color: white;">
-        <a class="  d-flex align-items-center " href="#">
-            <img src="./images/logo_arambh.webp" class=" p-0 main-logo1" alt="">
+            </a>
+            <button type="button" class="navbar-toggler me-4 text-white" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" style="background-color: white;">
+                <span class="navbar-toggler-icon text-white"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="https://aarambhtutorials.com/" class="nav-item nav-link">
+                        <h5>Home</h5>
+                    </a>
+                    <a href="hire-home-tutor.html" class="nav-item nav-link">
+                        <h5>Hire Home Tutor</h5>
+                    </a>
+                    <!-- <a href="" class="nav-item nav-link">
+                        <h5>Jobs</h5>
+                    </a> -->
 
-        </a>
-        <button type="button" class="navbar-toggler me-4 text-white" data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse" style="background-color: white;">
-            <span class="navbar-toggler-icon text-white"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="" class="nav-item nav-link active">
-                    <h5>Home</h5>
-                </a>
-                <a href="" class="nav-item nav-link">
-                    <h5>Hire Home Tutor</h5>
-                </a>
-                <a href="" class="nav-item nav-link">
-                    <h5>Jobs</h5>
-                </a>
-
-                <a href="" class="nav-item nav-link">
-                    <h5>Register as tutor</h5>
-                </a>
+                    <a href="register-as-home-tutor.html" class="nav-item nav-link active">
+                        <h5>Register as tutor</h5>
+                    </a>
 
 
-                <!-- <div class="nav-item dropdown">
+                    <!-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link "><h5>Tutor</h5></a>
                     <div class="dropdown-menu fade-up m-0">
                         <a href="price.html" class="dropdown-item">Certified Teachers</a>
@@ -70,13 +69,14 @@
                     </div>
                 </div> -->
 
-            </div>
-            <!-- <div class="number">
+                </div>
+                <!-- <div class="number">
                 <h4 class="m-0 pe-lg-5 d-none d-lg-block"><iconify-icon icon="material-symbols:call-outline"
                         style="margin-bottom: -2%;"></iconify-icon>70681 69209</h4>
             </div> -->
-        </div>
-    </nav>
+            </div>
+        </nav>
+
     <div class="container-fluid head-image py-5 h-100 w-100 text-center ">
 
         <div class="container pb-5 pt-5">
@@ -101,62 +101,155 @@
     </div>
      <!--form-->
      <div class="container-fluid">
-        <h2 class="text-center fw-bold pt-3">LOOKING FOR HOME TUTOR?</h2>
-        <form>
-            
-
-        </form>
-       
+        
+        <form class="border border-3 border-dark mt-5 p-3 tutor-form" id="tutor-form">
+            <h2>Fill persnole details</h2>
+        <div class="row">
+            <div class="col-sm-12 col-lg-12 col-mg-12-sm-12 col-lg-12 col-mg-12">
+                <h4>Name</h4>
+                <input type="Name" class="form-control w-75 p-2" placeholder="Name" id="name-tutor"
+                    required>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-mg-12">
+                <h4>Father Name</h4>
+                <input type="text" class="form-control w-75 p-2" placeholder="Father-Name:" id="Father-name"
+                    required>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-mg-12">
+                <h4>Gender</h4>
+                <input type="text" class="form-control w-75 p-2" placeholder="Gender" id="gender"
+                    required>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-mg-12">
+                <h4>Phone no</h4>
+                <input type="tel" class="form-control w-75 p-2" placeholder="Phone no" id="Phone no"
+                    required>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-mg-12">
+                <h4>Email</h4>
+                <input type="email" class="form-control w-75 p-2" placeholder="Email" id="tutor-email"
+                    required>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-mg-12">
+                <h4>City</h4>
+                <input type="text" class="form-control w-75 p-2" placeholder="City" id="tutor-city"
+                    required>
+                    
+            </div>
+            <button type="submit" name="submit" class="btn btn-primary mb-4 mt-3 p-2  w-50 mx-auto" id="submit"
+            style="font-size: larger;">Submit</button>
         </div>
+
+           
+        </form>
     </div>
- <!-- Footer Start -->
+ <!---why perfect-->
+ <div class="container-fluid mb-4 ">
 
-    
- <div class="container-fluid bg-dark text-light footer pt-4 pb-5 p-5 wow fadeIn" data-wow-delay="0.1s"
- style="margin-top: 6rem;">
- <div class="row p-4">
-     <div class="col-sm-12 col-lg-4 col-mg-4">
-         <h3>Address:-</h3>
-     <ul style="list-style-type: none; font-size: larger;">
-         <li>Shyam Nagar ,Kanpur(208013)</li>
-         <li>info@autotransportationcenter.com</li>
-         <li> 7310169209 , 6389176634</li>
-     </ul>    
-     </div>
-     <div class="col-sm-12 col-lg-4 col-mg-4">
-         <h3>Services:-</h3>
-         <ul style="list-style-type: none; font-size: larger;">
-             <li>HOME</li>
-             <li>HIRE HOME TUTOR</li>
-             <li>REGISTER AS TUTOR</li>
-             <li>TERMS AND CONDITIONS</li>
-         </ul>    
-     </div>
+    <h3 class="fw-bold  why-perfrct mb-3">Terms & Conditions</h3>
+    <!-- <p class="why-content">Parents and kids can locate qualified home tutors in their area for any subject, as
+        well
+        as classes and board, with the assistance of Perfect Tutor. Every subject receives individualized
+        attention
+        from our certified instructors. We give parents and kids information about the best instructors, their
+        credentials, costs, testimonials, methods of instruction, and other specifics.</p> -->
+    <div class="row why-div">
+        <div class="col-sm-12 col-mg-6 col-lg-6 mb-2">
+            <p> <iconify-icon icon="mdi:numeric-1-circle"
+                    style="font-size: 30px; margin-bottom: -2%; margin-left: -8.5%; margin-right: 1%;"></iconify-icon>
+                    There is no charges for register yourself in AARAMBH TUTORIAL
 
-     <div class="col-sm-12 col-lg-4 col-mg-4">
-         <h3>Socile Links:-</h3>
-         <ul style="list-style-type: none; font-size: larger;">
-             <li><iconify-icon icon="skill-icons:instagram" style="font-size: larger;"></iconify-icon> Instagram</li>
-             <li><iconify-icon icon="devicon:twitter" style="font-size: larger;"></iconify-icon>Twitter</li>
-             <li><iconify-icon icon="logos:facebook" style="font-size: larger;"></iconify-icon> Facebook</li>
-             <li><iconify-icon icon="devicon:linkedin" style="font-size: larger;"></iconify-icon>LinkedIn</li>
-         </ul>  
-     </div>
-     <div class="container">
-         <div class="copyright">
-             <div class="row">
-                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                     &copy; <a class="border-bottom" href="#"></a> aarambhtutorials.com, All Right Reserved.
-                 </div>
-                 <!-- <div class="col-md-6 text-center text-md-end">
-               </*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                 <!-- Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-               </br>Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a> -->
-             </div>
-         </div>
-     </div>
 
- </div>
- <!-- Footer End -->
+            </p>
+        </div>
+        <div class="col-sm-12 col-mg-6 col-lg-6 mb-2">
+            <p><iconify-icon icon="mdi:numeric-2-circle" class="why-cont"
+                    style="font-size: 30px; margin-bottom: -2%;"></iconify-icon>
+                    Tutor must be provide  2 days free demo classes to students then you will be selected by parents
+
+            </p>
+        </div>
+        <div class="col-sm-12 col-mg-6 col-lg-6 mb-2">
+            <p> <iconify-icon icon="mdi:numeric-3-circle"
+                    style="font-size: 30px; margin-bottom: -2%; margin-left: -8.5%; margin-right: 1%;"></iconify-icon>
+                    Must be follow all the professional ethics as a tutors
+
+        </div>
+
+        <div class="col-sm-12 col-mg-6 col-lg-6 mb-2">
+            <p> <iconify-icon icon="mdi:numeric-4-circle" class="why-cont"
+                    style="font-size: 30px; margin-bottom: -2%;"></iconify-icon>
+                    AARAMBH provide you tuitions. Under our policies we deduct 40% charges in first month payment after that you (tutor) received direct payment from parents
+
+            </p>
+        </div>
+
+        <!-- <div class="col-sm-12 col-mg-6 col-lg-6 mb-2">
+            <p> <iconify-icon icon="mdi:numeric-5-circle"
+                    style="font-size: 30px; margin-bottom: -2%; margin-left: -8.5%; margin-right: 1%;"></iconify-icon>our
+                rationale is scoring marks & placed in merit list
+            </p>
+        </div>
+        <div class="col-sm-12 col-mg-6 col-lg-6 mb-2">
+            <p> <iconify-icon icon="mdi:numeric-6-circle" class="why-cont"
+                    style="font-size: 30px; margin-bottom: -2%;"></iconify-icon>
+                AARAMBH provide best quality & confident Tutors to our students</p>
+        </div> -->
+
+    </div>
+
+</div>
+
+        <!-- Footer Start -->
+
+
+        <div class="container-fluid bg-dark text-light footer pt-4 pb-5 p-5 wow fadeIn" data-wow-delay="0.1s"
+            style="margin-top: 6rem;">
+            <div class="row p-4">
+                <div class="col-sm-12 col-lg-4 col-mg-4">
+                    <h3>Address:-</h3>
+                    <ul style="list-style-type: none; font-size: larger;">
+                        <li>Shyam Nagar ,Kanpur(208013)</li>
+
+                        <li> 7310169209 , 6389176634</li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-lg-4 col-mg-4">
+                    <h3>Services:-</h3>
+                    <ul style="list-style-type: none; font-size: larger;">
+                        <li>HOME</li>
+                        <li>HIRE HOME TUTOR</li>
+                        <li>REGISTER AS TUTOR</li>
+                        <li>TERMS AND CONDITIONS</li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-12 col-lg-4 col-mg-4">
+                    <h3>Socile Links:-</h3>
+                    <ul style="list-style-type: none; font-size: larger;">
+                        <li class="pb-1"><a href="https://instagram.com/aarambh__tutorials?igshid=OGQ5ZDc2ODk2ZA== "><iconify-icon icon="skill-icons:instagram" style="font-size: larger; margin-bottom: -1%; margin-right: 2%;"></iconify-icon>
+                            Instagram</li>
+                        <li class="pb-1"> <a href="https://instagram.com/aarambh__tutorials?igshid=OGQ5ZDc2ODk2ZA== "><iconify-icon icon="devicon:twitter" style="font-size: larger; margin-bottom: -1%; margin-right: 2%;"></iconify-icon>Twitter</li></a>
+                        <li class="pb-1"><a href="https://instagram.com/aarambh__tutorials?igshid=OGQ5ZDc2ODk2ZA== "><iconify-icon icon="logos:facebook" style="font-size: larger; margin-bottom: -1%; margin-right: 2%;"></iconify-icon> Facebook</li></a>
+                        <li class="pb-1"><a href="https://instagram.com/aarambh__tutorials?igshid=OGQ5ZDc2ODk2ZA== "><iconify-icon icon="devicon:linkedin" style="font-size: larger; margin-bottom: -1%; margin-right: 2%;"></iconify-icon>LinkedIn
+                        </li></a>
+                    </ul>
+                </div>
+                <div class="container">
+                    <div class="copyright">
+                        <div class="row">
+                            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                                &copy; <a class="border-bottom" href="#"></a> aarambhtutorials.com, All Right Reserved.
+                            </div>
+                            <!-- <div class="col-md-6 text-center text-md-end">
+                      </*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            <!-- Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                      </br>Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Footer End -->
 </body>
 </html>
