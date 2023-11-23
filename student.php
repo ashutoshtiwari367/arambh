@@ -38,6 +38,8 @@ $mail->setFrom('info@aarambhtutorials.com', 'ARAMBH');
 
 $mail->addAddress($email);
 $mail->addBCC('ashutoshtiwari9453@gmail.com', 'new customer details');
+$mail->addBCC('nidhipal1809@gmail.com', 'new customer details');
+$mail->addBCC('shivampal1203@gmail.com', 'new customer details');
 
 $mail->isHTML(true);
 
