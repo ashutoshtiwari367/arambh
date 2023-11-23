@@ -200,8 +200,25 @@
     background-color: aliceblue;
    
 }
+.success{
+    width: 300px;
+    height: 60px;
+    position: fixed;
+    top: 18%;
+    left: 35%;
+    background-color: rgb(185, 220, 252);
+    z-index: 5;
+    display: none;
+    place-items: center;
+    line-height: 40px;
+    font-size: larger;
+    ;
+   
+}
 @media screen and (max-width: 450px){
-    
+    .success{
+        left:0;
+    }
     .tutor-form{
         width: 100%;
     }
