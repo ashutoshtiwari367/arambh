@@ -199,6 +199,10 @@
     </div>
 
 </div>
+<div class="sitebutton sitebutton-call" id="sitebutton">
+    <a href="https://wa.me/7310169209"><iconify-icon icon="logos:whatsapp-icon"
+        style="font-size: 60px;"></iconify-icon></a>
+</div>
 
         <!-- Footer Start -->
 
@@ -251,5 +255,24 @@
 
             </div>
             <!-- Footer End -->
+
+            <script>
+                 window.addEventListener('scroll', function () {
+            a = window.pageYOffset
+            if (a >= 100) {
+                ac = document.querySelectorAll('#sitebutton')
+                for (i = 0; i < ac.length; i++) {
+                    ac[i].style.display = 'block'
+                }
+                // document.getElementById('sitebutton').style.display = 'block'
+            } else {
+                // document.getElementById('sitebutton').style.display = 'none'
+                ac = document.querySelectorAll('#sitebutton')
+                for (i = 0; i < ac.length; i++) {
+                    ac[i].style.display = 'none'
+                }
+            }
+        });
+            </script>
 </body>
 </html>
