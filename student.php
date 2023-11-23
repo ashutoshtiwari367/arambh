@@ -48,7 +48,7 @@ $mail->Subject = 'Qoute from Arambh';
 $mail->Body =  '
 <body style="background-color: black;">
     <div><h1 style="text-align: center; background-color: black; color: white; height: auto wid
-    80%; padding: 3%;">ARAMBH</h1></div>
+    80%; padding: 3%;">AARAMBH</h1></div>
     <table style="margin: auto; align-items:center; justify-content: center;">
         <tr style=" font-size: larger; color: white;">
         <td> Thank you for fill the form .
