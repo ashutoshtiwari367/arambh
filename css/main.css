@@ -215,6 +215,10 @@
     ;
    
 }
+.text-dc{
+    text-decoration: none;
+    color: white;
+}
 @media screen and (max-width: 450px){
     .success{
         left:0;
