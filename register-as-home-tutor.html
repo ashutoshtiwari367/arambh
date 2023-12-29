@@ -106,33 +106,38 @@
         <div class="row">
             <div class="col-sm-12 col-lg-12 col-mg-12-sm-12 col-lg-12 col-mg-12">
                 <h4>Name</h4>
-                <input type="Name" class="form-control w-75 p-2" placeholder="Name" id="name-tutor"
+                <input type="Name" class="form-control w-75 p-2" placeholder="Name" name="name-tutor" id="name-tutor"
+                    required>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-mg-12-sm-12 col-lg-12 col-mg-12">
+                <h4>Email</h4>
+                <input type="email" class="form-control w-75 p-2" placeholder="Email" name="email-tutor" id="email-tutor"
                     required>
             </div>
             <div class="col-sm-12 col-lg-12 col-mg-12">
                 <h4>Last Qualification</h4>
-                <input type="text" class="form-control w-75 p-2" placeholder="Last Qualification:" id="last-qualification"
+                <input type="text" class="form-control w-75 p-2" placeholder="Last Qualification:" name="last-qualification" id="last-qualification"
                     required>
             </div>
             <div class="col-sm-12 col-lg-12 col-mg-12">
                 <h4>Teaching Experience</h4>
-                <input type="text" class="form-control w-75 p-2" placeholder="Teaching Experience" id="teaching-experience"
+                <input type="text" class="form-control w-75 p-2" placeholder="Teaching Experience" name="teaching-experience" id="teaching-experience"
                     required>
             </div>
             <div class="col-sm-12 col-lg-12 col-mg-12">
                 <h4>Phone no</h4>
-                <input type="tel" class="form-control w-75 p-2" placeholder="Phone no" id="Phone-no"
+                <input type="tel" class="form-control w-75 p-2" placeholder="Phone no" name="Phone-no" id="Phone-no"
                     required>
             </div>
             <div class="col-sm-12 col-lg-12 col-mg-12">
                 <h4>Upto which class you are comfortable -</h4>
-                <input type="text" class="form-control w-75 p-2" placeholder="Upto which class you are comfortable " id="upto-class"
+                <input type="text" class="form-control w-75 p-2" placeholder="Upto which class you are comfortable " name="upto-class" id="upto-class"
                     required>
             </div>
             <div class="col-sm-12 col-lg-12 col-mg-12">
                 <h4>And upto which areas?-
                 </h4>
-                <input type="text" class="form-control w-75 p-2" placeholder="And upto which areas?-
+                <input type="text" class="form-control w-75 p-2" name="tutor-area" placeholder="And upto which areas?-
                 " id="tutor-area"
                     required>
                     
@@ -140,7 +145,7 @@
             <div class="col-sm-12 col-lg-12 col-mg-12">
                 <h4>For which board you teach ?
                 </h4>
-                <input type="text" class="form-control w-75 p-2" placeholder="For which board you teach?
+                <input type="text" class="form-control w-75 p-2" name="which-board" placeholder="For which board you teach?
                 " id="which-board"
                     required>
                     
@@ -297,6 +302,22 @@
                 }
             }
         });
+        
+        const form = document.querySelector("#tutor-form")
+        form.addEventListener('submit',(e)=>{
+            e.preventDefault()
+            const formdata = new FormData(e.target)
+            const aa = Object.fromEntries(formdata.entries())
+            fetch('./a.php',{
+                method : "POST",
+                body: aa
+            }).then(res=>res.text())
+            .then(d=>{
+                console.log(d)
+            })
+        })
+        
+        
             </script>
 </body>
 </html>

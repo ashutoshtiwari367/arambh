@@ -2,12 +2,11 @@
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-
-require './phpMailer/src/Exception.php';
+`require './phpMailer/src/Exception.php';
 require './phpMailer/src/PHPMailer.php';
-require './phpMailer/src/SMTP.php';
+require './phpMailer/src/SMTP.php';   nm
 
-
+ 
 $parent_name = $_POST['parent_name'];
 $student_name = $_POST['student_name'];
 $class_ = $_POST['class_'];

@@ -16,6 +16,7 @@ $phone_no = $_POST['phone_no'];
 $upto_class = $_POST['upto_class'];
 $tutor_area = $_POST['tutor_area'];
 $which_board = $_POST['which_board'];
+$email = $_POST['tutor_email'];
 $mail = new PHPMailer(true);
     
 $mail->isSMTP();
