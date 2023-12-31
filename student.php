@@ -42,7 +42,7 @@ $mail->addBCC('shivampal1203@gmail.com', 'new customer details');
 
 $mail->isHTML(true);
 
-$mail->Subject = 'Qoute from Arambh';
+$mail->Subject = 'Qoute from Aarambh';
 
 $mail->Body =  '
 <body style="background-color: black;">

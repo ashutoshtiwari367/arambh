@@ -15,6 +15,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="success" style="display:none;position:fixed;top:100px;left:35%;background:green;color:white;text-align:center;padding:1% 3%;" >Send Successfuly</div>
     <div class="row" style="background-color: black;">
         <div class="col-sm-12 col-mg-6 col-lg-6 text-center ">
             <div class="d-flex mt-1 text-white">
@@ -106,46 +107,51 @@
         <div class="row">
             <div class="col-sm-12 col-lg-12 col-mg-12-sm-12 col-lg-12 col-mg-12">
                 <h4>Name</h4>
-                <input type="Name" class="form-control w-75 p-2" placeholder="Name" name="name-tutor" id="name-tutor"
+                <input type="Name" class="form-control w-75 p-2" placeholder="Name" name="name_tutor" id="name-tutor"
                     required>
             </div>
             <div class="col-sm-12 col-lg-12 col-mg-12-sm-12 col-lg-12 col-mg-12">
                 <h4>Email</h4>
-                <input type="email" class="form-control w-75 p-2" placeholder="Email" name="email-tutor" id="email-tutor"
+                <input type="email" class="form-control w-75 p-2" placeholder="Email" name="email_tutor" id="email-tutor"
                     required>
             </div>
             <div class="col-sm-12 col-lg-12 col-mg-12">
                 <h4>Last Qualification</h4>
-                <input type="text" class="form-control w-75 p-2" placeholder="Last Qualification:" name="last-qualification" id="last-qualification"
+                <input type="text" class="form-control w-75 p-2" placeholder="Last Qualification:" name="last_qualification" id="last-qualification"
                     required>
             </div>
             <div class="col-sm-12 col-lg-12 col-mg-12">
                 <h4>Teaching Experience</h4>
-                <input type="text" class="form-control w-75 p-2" placeholder="Teaching Experience" name="teaching-experience" id="teaching-experience"
+                <input type="text" class="form-control w-75 p-2" placeholder="Teaching Experience" name="teaching_experience" id="teaching-experience"
                     required>
             </div>
             <div class="col-sm-12 col-lg-12 col-mg-12">
                 <h4>Phone no</h4>
-                <input type="tel" class="form-control w-75 p-2" placeholder="Phone no" name="Phone-no" id="Phone-no"
+                <input type="tel" class="form-control w-75 p-2" placeholder="Phone no" name="teaching_experience1" id="teaching-experience1"
                     required>
             </div>
+            <!-- <div class="col-sm-12 col-lg-12 col-mg-12">
+                <h4>Phone no</h4>
+                <input type="tel" class="form-control w-75 p-2" placeholder="Phone no" name="Phone_no" id="Phone-no"
+                    required>
+            </div> -->
             <div class="col-sm-12 col-lg-12 col-mg-12">
                 <h4>Upto which class you are comfortable -</h4>
-                <input type="text" class="form-control w-75 p-2" placeholder="Upto which class you are comfortable " name="upto-class" id="upto-class"
+                <input type="text" class="form-control w-75 p-2" placeholder="Upto which class you are comfortable " name="upto_class" id="upto-class"
                     required>
             </div>
             <div class="col-sm-12 col-lg-12 col-mg-12">
                 <h4>And upto which areas?-
                 </h4>
-                <input type="text" class="form-control w-75 p-2" name="tutor-area" placeholder="And upto which areas?-
+                <input type="text" class="form-control w-75 p-2" name="tutor_area" placeholder="And upto which areas?-
                 " id="tutor-area"
                     required>
                     
             </div>
             <div class="col-sm-12 col-lg-12 col-mg-12">
-                <h4>For which board you teach ?
+                <h4>For which board you teach?
                 </h4>
-                <input type="text" class="form-control w-75 p-2" name="which-board" placeholder="For which board you teach?
+                <input type="text" class="form-control w-75 p-2" name="which_board" placeholder="For which board you teach?
                 " id="which-board"
                     required>
                     
@@ -186,7 +192,7 @@
         <div class="col-sm-12 col-mg-6 col-lg-6 mb-2">
             <p> <iconify-icon icon="mdi:numeric-3-circle"
                     style="font-size: 30px; margin-bottom: -2%; margin-left: -8.5%; margin-right: 1%;"></iconify-icon>
-                    Must be follow all the professional ethics as a tutors
+                    Must be follow all the professional ethics as a tutors
 
         </div>
 
@@ -221,7 +227,7 @@
         <!-- Footer Start -->
 
 
- <div class="container-fluid bg-dark text-light footer pt-4 pb-5 p-5 wow fadeIn" data-wow-delay="0.1s"
+ <div class="container-fluid bg-dark1 text-light footer pt-4 pb-5 p-5 wow fadeIn" data-wow-delay="0.1s"
  style="margin-top: 6rem;">
  <div class="row p-4">
      <div class="col-sm-12 col-lg-4 col-mg-4">
@@ -306,14 +312,26 @@
         const form = document.querySelector("#tutor-form")
         form.addEventListener('submit',(e)=>{
             e.preventDefault()
-            const formdata = new FormData(e.target)
-            const aa = Object.fromEntries(formdata.entries())
-            fetch('./a.php',{
+            const formdata = new FormData()
+            formdata.append('name_tutor',document.getElementById('name-tutor').value)
+            formdata.append('last_qualification',document.getElementById('last-qualification').value)
+            formdata.append('teaching_experience',document.getElementById('teaching-experience').value)
+            formdata.append('teaching_experience1',document.getElementById('teaching-experience1').value)
+           /* formdata.append('phone_no',document.getElementById('phone-no').value)*/
+            formdata.append('upto_class',document.getElementById('upto-class').value)
+            formdata.append('tutor_area',document.getElementById('tutor-area').value)
+            formdata.append('which_board',document.getElementById('which-board').value)
+            formdata.append('tutor_email',document.getElementById('email-tutor').value)
+            fetch('teacher.php',{
                 method : "POST",
-                body: aa
-            }).then(res=>res.text())
+                body: formdata
+            }).then(res=>res.json())
             .then(d=>{
-                console.log(d)
+                if(d['status'] == 200){
+                document.getElementById('success').style.display='block'
+                setTimeout(()=>{document.getElementById('success').style.display='none'},2000)
+                    
+                }
             })
         })
         

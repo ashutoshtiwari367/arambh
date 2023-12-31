@@ -219,6 +219,10 @@
     text-decoration: none;
     color: white;
 }
+
+.bg-dark1{
+    background-image: url(../images/footer-background-011.jpg);
+}
 @media screen and (max-width: 450px){
     .success{
         left:0;
