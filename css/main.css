@@ -1,34 +1,42 @@
-*{
-  font-family: 'Lora', serif;
-  box-sizing: border-box;
+* {
+    font-family: 'Lora', serif;
+    box-sizing: border-box;
 }
-.main-logo1
-{
-   
+
+.main-logo1 {
+
     margin: 0%;
 
     width: 150px;
     height: 90px;
-    
+
 }
-.number{
-                
-    margin-left: 2%;          
+
+.number {
+
+    margin-left: 2%;
     padding: 1%;
     border-radius: 100px;
-    
+
     animation: name .5s linear alternate infinite;
-  
+
     text-align: center;
-  
-     
-  }
-  @keyframes name { 
-     from{transform: scale(1); }
-     to{transform: scale(1.2); }
-     
-  }
-  .navbar .dropdown-toggle::after {
+
+
+}
+
+@keyframes name {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+
+}
+
+.navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
     font-family: "Font Awesome 5 Free";
@@ -55,7 +63,7 @@
 }
 
 @media (max-width: 991.98px) {
-    .navbar-light .navbar-nav .nav-link  {
+    .navbar-light .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
     }
@@ -121,86 +129,99 @@
     }
 }
 
-.head-image{
+.head-image {
     background: linear-gradient(rgba(6, 3, 21, 0.235), rgba(6, 3, 21, 0.322)), url(../images/header-image-2.webp) center center no-repeat;
     background-size: cover;
-    
+
 }
-.bg-image-form{
+
+.bg-image-form {
     background-image: url(../images/form-bg-image.webp);
     margin: 3%;
-    
+
     background-size: 100%;
 }
-.form-main{
+
+.form-main {
     width: 150%;
     padding: 8%;
     height: auto;
 }
+
 @media screen and (max-width: 450px) {
 
-    .form-main{
-        height:auto;
+    .form-main {
+        height: auto;
         width: 85%;
-      
-        
+
+
     }
 }
 
-.bg-dark1{
-    background-color:black ;
-    
+.bg-dark1 {
+    background-color: black;
+
 }
-.header-content{
+
+.header-content {
     font-size: x-large;
 }
-.why-perfrct{
+
+.why-perfrct {
     border-bottom: 3px solid black;
     text-align: center;
     width: 25%;
     margin: auto;
     margin-top: 5%;
 }
-.why-div{
+
+.why-div {
     align-items: center;
     justify-content: center;
     margin: auto;
-    width: 85%; 
+    width: 85%;
     font-size: 20px;
     padding: 5%;
     background-color: aliceblue;
-    box-shadow: 0 0 12px  black;
+    box-shadow: 0 0 12px black;
 }
-.why-content{
-    width: 85%; text-align: center;
-    margin: auto; 
+
+.why-content {
+    width: 85%;
+    text-align: center;
+    margin: auto;
     margin-bottom: 2%;
     font-size: large;
 
 
 }
+
 .sitebutton {
     position: fixed;
     bottom: 5%;
     right: 1%;
     display: none;
-    z-index: 99;}
+    z-index: 99;
+}
 
-.why-perfrct1{
+.why-perfrct1 {
     border-bottom: 3px solid white;
     text-align: center;
     width: 25%;
     margin: auto;
-    margin-top: 5%;padding-top: 2%;
+    margin-top: 5%;
+    padding-top: 2%;
 
 }
-.tutor-form{
+
+.tutor-form {
     width: 50%;
     margin: auto;
     background-color: aliceblue;
-   
+
 }
-.success{
+
+.success {
     width: 300px;
     height: 60px;
     position: fixed;
@@ -213,34 +234,57 @@
     line-height: 40px;
     font-size: larger;
     ;
-   
+
 }
-.text-dc{
+
+.text-dc {
     text-decoration: none;
     color: white;
 }
 
-.bg-dark1{
+.bg-dark1 {
     background-image: url(../images/footer-background-011.jpg);
 }
-@media screen and (max-width: 450px){
-    .success{
-        left:0;
+
+.success {
+    display: none;
+    position: fixed;
+    top: 200px;
+    left: 34%;
+    width: 400px;
+    background: green;
+    color: white;
+    text-align: center;
+    padding: 1% 3%; 
+    height: auto;
+}
+
+.modal {
+    position: fixed;
+}
+
+@media screen and (max-width: 450px) {
+    .success {
+        left: 0;
     }
-    .tutor-form{
+
+    .tutor-form {
         width: 100%;
     }
 
-    .why-perfrct{
+    .why-perfrct {
         width: 75%;
     }
-    .why-perfrct1{
+
+    .why-perfrct1 {
         width: 75%;
     }
-    .why-cont{
+
+    .why-cont {
         margin-left: -8.5%;
     }
-    .sitebutton{
+
+    .sitebutton {
         right: 5%;
     }
 }

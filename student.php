@@ -1,10 +1,14 @@
 <?php
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-`require './phpMailer/src/Exception.php';
+
+require './phpMailer/src/Exception.php';
 require './phpMailer/src/PHPMailer.php';
-require './phpMailer/src/SMTP.php';   nm
+require './phpMailer/src/SMTP.php';
 
  
 $parent_name = $_POST['parent_name'];
